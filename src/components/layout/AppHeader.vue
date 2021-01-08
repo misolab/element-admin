@@ -67,7 +67,7 @@ export default {
     handleUserCommand(cmd) {
       if (cmd === 'logout') {
         this.$router.push('/login')
-          this.resetUser()
+        this.resetUser()
       }
     }
   }

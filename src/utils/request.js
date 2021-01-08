@@ -12,7 +12,7 @@ const errorHandler = error => {
   if (error.response) {
     const resBody = error.response.data
     if (error.response.status === 403 || error.response.status === 401) {
-      store.dispatch("Logout")
+      store.dispatch('Logout')
       Notification.error({
         message: '인증 오류',
         description: resBody.error.message
