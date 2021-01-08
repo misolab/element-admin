@@ -3,7 +3,6 @@ import { sync } from 'vuex-router-sync'
 import App from './App.vue'
 import router from './router/'
 import store from './store/'
-import './registerServiceWorker'
 import './registerElementUI'
 import './styles/app/index.scss'
 
