@@ -9,11 +9,15 @@
 ```bash
 # clone this repository
 yarn install
-yarn run serve
+# 
+yarn serve
 # for mock api
-yarn run serve --MOCK=true
+yarn dev // yarn run serve --MOCK=true
 ```
 
+### Login Account (Mock)
+- Admin role : admin / 1111
+- User role : any / 111
 
 ## Built With
 
