@@ -14,7 +14,7 @@ export default function checkUser(to, from, next) {
     if (!getters.username) {
       dispatch('GetUserInfo')
         .then(() => {
-          next() 
+          next()
         })
         .catch(() => {
           Notification.error({
