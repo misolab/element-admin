@@ -14,10 +14,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --MOCK=true",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "deploy": "npm run build && now ./dist -A ../now.json && now alias"
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -49,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/misolab/element-admin.git"
+    "url": "git+https://github.com/misolab/simple-vue-admin-template.git"
   },
   "bugs": {
-    "url": "https://github.com/misolab/element-admin/issues"
+    "url": "https://github.com/misolab/simple-vue-admin-template/issues"
   },
-  "homepage": "https://github.com/misolab/element-admin#readme",
+  "homepage": "https://github.com/misolab/simple-vue-admin-template#readme",
   "author": "misolab",
   "license": "MIT"
 }

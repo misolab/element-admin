@@ -8,12 +8,13 @@
       mode="horizontal"
     >
       <el-menu-item index="/">Home</el-menu-item>
+      <el-menu-item index="/member">Member</el-menu-item>
     </el-menu>
 
     <div class="header-user-menu" v-if="user.token">
       <el-dropdown class="header-user-menu__item" @command="handleUserCommand">
         <span class="el-dropdown-link">
-          {{ user.name || 'Unkown User'}}
+          {{ user.name || "Unkown User" }}
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="logout">Logout</el-dropdown-item>

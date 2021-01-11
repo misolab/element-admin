@@ -29,9 +29,31 @@ const router = new Router({
           path: '',
           name: 'home',
           meta: {
-            requiresUser: true
+            requiresUser: true,
+            breadcrumb: ['home']
           },
           component: Home
+        },
+
+        {
+          path: '/editor',
+          name: 'editor',
+          meta: {
+            requiresUser: true,
+            breadcrumb: [{ name: 'home', path: '/' }, { name: 'editor' }]
+          },
+          component: () =>
+            import(/* webpackChunkName: "editor" */ '@/views/Editor.vue')
+        },
+        {
+          path: '/member',
+          name: 'member',
+          meta: {
+            requiresUser: true,
+            requiresRole: 'ADMIN'
+          },
+          component: () =>
+            import(/* webpackChunkName: "member" */ '@/views/Member.vue')
         },
 
         { path: '/403', component: Forbidden },
