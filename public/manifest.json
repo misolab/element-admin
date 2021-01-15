@@ -1,6 +1,6 @@
 {
-  "name": "element-admin",
-  "short_name": "element-admin",
+  "name": "simple-vue-admin-template",
+  "short_name": "simple-vue-admin-template",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

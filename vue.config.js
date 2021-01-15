@@ -22,6 +22,15 @@ const vueConfig = {
         pathRewrite: {
           '^/api': ''
         }
+      },
+      '/images': {
+        // backend url
+        target: 'http://localhost:8090/images',
+        ws: false,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/images': ''
+        }
       }
     }
   }
